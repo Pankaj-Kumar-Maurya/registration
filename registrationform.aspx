@@ -34,7 +34,6 @@
                      <asp:ListItem Text="BCA" Value="1"></asp:ListItem>
                     <asp:ListItem Text="MCA" Value="2"></asp:ListItem>
                     <asp:ListItem Text="B.Tech" Value="3"></asp:ListItem>--%>
-                    
                     </asp:DropDownList></td>
                     </tr>
                 <tr>

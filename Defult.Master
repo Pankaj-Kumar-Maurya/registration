@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Defult.master.cs" Inherits="registration.Defult" %>
+<%@ Register Src="~/Header.ascx" TagName="myheader" TagPrefix="dark" %>
+<%@ Register Src="~/Fotter.ascx" TagName="myfooter" TagPrefix="dark" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <script src="jquery.js"></script>
+    <link href="menu.css" rel="stylesheet" />
+    <script src="menu.js"></script>
+
+
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <dark:myheader id="h1" runat="server"></dark:myheader>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <div id="menu">
+		<ul class="menu">
+			
+			
+            <li class="last"><a href="registrationform.aspx"><span>Registration</span></a></li>
+            <li class="last"><a href="login.aspx"><span>Login</span></a></li>
+           
+		</ul>
+	</div>
+
+                    </td>
+                </tr>
+                <tr>
+                       <td>
+                           <center>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                           </center>
+                          
+                    </td>
+                </tr>
+                <tr>
+                       <td>
+                           <dark:myfooter id="f1" runat="server"></dark:myfooter>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </form>
+</body>
+</html>
